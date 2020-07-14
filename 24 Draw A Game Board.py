@@ -16,3 +16,5 @@ sizes (8x8 for chess, 19x19 for Go, and many more). Ask the user what size
 game board they want to draw, and draw it for them to the screen using
 Python’s print statement.
 """
+
+# I'm just skipping to 29
