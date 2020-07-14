@@ -9,3 +9,12 @@ Extra:
 - Ask the user how strong they want their password to be. For weak
   passwords, pick a word or two from a list.
 """
+
+from random import randrange
+
+chars = 'abcdefghijklmnopqrstuvwxyz' \
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ' \
+        '1234567890!@#$%^&*'
+
+print(''.join([chars[randrange(len(chars))] \
+      for i in range(int(input('Password Length:')))]))
