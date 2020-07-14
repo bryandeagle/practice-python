@@ -5,3 +5,6 @@ with the words in backwards order. For example, say I type the string:
 "My name is Michele" Then I would see the string: "Michele is name My"
 shown back to me.
 """
+
+sentence = input('Give me a string!')
+print(' '.join(sentence.split()[::-1]))
