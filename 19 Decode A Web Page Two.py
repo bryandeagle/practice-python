@@ -14,3 +14,11 @@ This will just print the full text of the article to the screen. It will not
 make it easy to read, so next exercise we will learn how to write this text
 to a .txt file.
 """
+
+
+from bs4 import BeautifulSoup
+import requests
+
+page = requests.get('http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture')
+soup = BeautifulSoup(page.content, 'lxml')
+print(soup.find('body').text)
