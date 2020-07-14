@@ -8,3 +8,14 @@ Extras:
 2. Go back and do Exercise 5 using sets, and write the solution for that in a
    different function.
 """
+
+
+def dedup(arr):
+    res = list()
+    for i in arr:
+        if i not in res:
+            res.append(i)
+    return res
+
+
+print(dedup([1, 2, 3, 5, 2, 3, 8, 8, 9]))
