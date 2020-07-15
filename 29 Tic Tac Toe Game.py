@@ -71,7 +71,6 @@ class TicTacToe:
 
 
 game = TicTacToe()
-
 while not game.evaluate():
     move = input('Player {} Move:'
                  .format(game.player))
