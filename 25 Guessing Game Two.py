@@ -17,3 +17,17 @@ in the middle of the range), and then increase / decrease by 1 as needed. After
 you’ve written the program, try to find the optimal strategy! (We’ll talk about
 what is the optimal one next week with the solution.)
 """
+
+correct = False
+minimum, maximum, count = 1, 100, 0
+while not correct:
+    count += 1
+    guess = int(round((maximum - minimum)/2 + minimum, 0))
+    feedback = input('Guess: {}. (h/l/c)?'.format(guess)).lower()
+    if feedback == 'l':
+        minimum = guess
+    elif feedback == 'h':
+        maximum = guess
+    elif feedback == 'c':
+        correct = True
+        print('Total guesses: {}'.format(count))
